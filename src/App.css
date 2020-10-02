@@ -118,6 +118,7 @@ footer {
 }
 
 #newquote {
+  cursor: pointer;
   margin:10px;
   background-color: green;
   position: relative;

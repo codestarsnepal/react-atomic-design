@@ -1,6 +1,8 @@
 import React from 'react';
 import quotes from './../atoms/QuotesDatabase';
 import './../../App.css';
+import NewQuoteButton from '../atoms/NewQuoteButton';
+import QuoteAndAuthor from '../atoms/QuoteAndAuthor';
 
 class QuoteBox extends React.Component {
     constructor() {
@@ -34,12 +36,9 @@ class QuoteBox extends React.Component {
     render() {
         return (
             <div style={{ backgroundColor: "#ccffcc" }} className="quotebox">
-                <div className="fadeIn">
-                    <h1 id="quote">"{this.state.quote}"</h1>
-                    <h4 id="author">-{this.state.author}</h4>
-                </div>
+                <QuoteAndAuthor {...this.state} />
                 <div className="butun">
-                    <button id="newquote" onClick={this.handleClick}>New Quote</button>
+                    <NewQuoteButton handleClick={this.handleClick} />
                 </div>
             </div >
 
