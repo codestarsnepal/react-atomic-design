@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+.SearchBar{
+  position: absolute;
+  top: 20px;
+  right: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.SearchButton button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 3px 10px;
+  font-size: 14px;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Search{
+  float: right;
+  margin-right: 5px;
+  font-size: 17px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchHere{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 5px;
+}
+
+.Logo{
+  height: 15px;
+  margin-left: 40px;
+}
+
+.Logo img {
+  height: 70px;
+}
+
+.header{
+  background-color: burlywood;
+  height: 80px;
+}
+
+.HeaderText{
+  margin-left: 150px;
+  font-size:40px;
+}
+
+.NavBar ul{
+
+  list-style-type: none;
+  background-color: #333;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.NavBar li{
+  float: left;
+  padding: 10px 16px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.NavBar li:hover{
+  background-color: #111;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.NavBar{
+  margin-top: -17px;
+}
+
+/* For quotes */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: yellowgreen;
+}
+
+.quotebox {
+  height:100%;
+  width:100%;
+  border :1px rgb(145, 126,126) solid;
+  border-radius: 10px;
+  text-align: right;
+  max-width: 45rem;
+}
+
+#quote{
+  margin:40px;
+  text-align: left;
+}
+
+.fadeIn {
+  height: 100%;
+  opacity: 0;
+  display: block;
+  animation: slidein 1s ease-out forwards;
+}
+
+
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
+
+#author {
+  margin: 15px;
+  font-style: italic;
+}
+
+#newquote {
+  margin:10px;
+  background-color: green;
+  position: relative;
+  border-radius: 8px;
+  height: 35px;
+  width: 100px;
+  font-weight: 700;
+  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  color: white;
+}
+
+
+
