@@ -1,11 +1,13 @@
 import React from 'react';
+import SubjectInput from '../../atoms/FormAtoms/Inputs/SubjectInput';
+import SubjectLabel from '../../atoms/FormAtoms/Labels/SubjectLabel';
 import './../../../App.css';
 
 function Subject() {
     return (
         <div className="Subject">
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style={{ height: "100px" }}></textarea>
+            <SubjectLabel />
+            <SubjectInput />
         </div>
     );
 }

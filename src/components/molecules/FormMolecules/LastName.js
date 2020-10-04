@@ -1,11 +1,13 @@
 import React from 'react';
+import LastNameInput from '../../atoms/FormAtoms/Inputs/LastNameInput';
+import LastNameLabel from '../../atoms/FormAtoms/Labels/LastNameLabel';
 import './../../../App.css';
 
 function LastName() {
     return (
         <div className="LastName">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
+            <LastNameLabel />
+            <LastNameInput />
         </div>
     );
 }
